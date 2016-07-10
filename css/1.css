@@ -1,0 +1,138 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+body{
+	width:100%;
+	border:#231f20;
+	background: #fafafa;
+		}
+		
+header{
+    background-color: #0e8466;
+	color: #EFEFEF;
+    padding: 5px 10px;	
+	min-height: 100px;	}
+
+#top_menu{
+width: 35%;
+	margin-top: 5px;
+	font-family: georgia;
+	display: inline-block;
+}
+
+#nav{
+margin-top: 5px;
+	width: 60%;
+	display: inline-block;
+	text-align: right;
+	float: right;
+}
+	#nav ul{}
+		#nav ul li{
+			display: inline-block;
+			box-shadow: 0px 1px 1px #666;
+            padding: 20px;
+            font-family: arial;
+            
+		}
+		
+footer{
+			background-color:  #8ae32b; 
+            padding:5px;
+		}
+	
+article{
+	border:1px ;
+    font-family: arial;  
+	background: #fae4e7;
+	padding: 20px;
+	margin:20px;
+	width: 80px 40px;
+    box-shadow: 0px 1px 1px #666;
+}
+	
+
+
+footer{
+	text-align: right;
+}
+footer li{
+	display:inline-block;
+    padding: 20px;
+box-shadow: 0px 1px 1px #666;
+ font-family: arial;
+}
+
+#first{
+    
+	display:-webkit-box;
+	-webkit-box-orient: horizontal;
+     -webkit-align-items: stretch;
+	width: 100%;
+	-webkit-box-pack: center;
+  }
+
+#second {
+    
+	display:-webkit-box;
+	-webkit-box-orient: horizontal;
+	width: 100%;
+	-webkit-box-pack: center;
+}
+
+a{
+text-decoration: none;
+background-color: none;
+}
+
+figure{
+border: 1px #ccc solid;
+border-radius: 5px; 
+margin: 10px;
+}
+
+figcaption{
+text-align: center; 
+color: #333333;
+font-size: 2em;
+}
+
+#mask {
+    display: none;
+    background: #000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: 999;
+}
+
+/* You can customize to your needs  */
+#login_box {
+    display: none;
+    background: #333;
+    padding: 10px;
+    border: 2px solid #ddd;
+    float: left;
+    font-size: 1.2em;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 99999;
+    box-shadow: 0px 0px 20px #999;
+    /* CSS3 */
+        -moz-box-shadow: 0px 0px 20px #999;
+    /* Firefox */
+        -webkit-box-shadow: 0px 0px 20px #999;
+    /* Safari, Chrome */
+	border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px;
+    /* Firefox */
+        -webkit-border-radius: 3px;
+    /* Safari, Chrome */;
+}

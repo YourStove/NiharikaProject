@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="css\1.css" />
+<style>
+{ margin: 0; }
+.ar{ float: right; }
+a{ text-decoration: none; color: #666;}
+form{ background: #eee; padding: 10px; }
+form p{text-decoration: none; color: #666; padding: 5px 0;}
+form .title{ min-width: 100px; display: inline-block; }
+form input[type=text], form input[type=password]{ border: 1px solid #fff; padding: 5px;}
+.button{ display: inline-block; padding:5px 10px; z-index: 0;  }
+.popup{ padding: 10px 10px 35px; background: #fff; z-index: 999; display: none; position: absolute; right: 0; }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/general.js" type="text/javascript">
+</script>
+</head>
+<body>
+
+<header>
+<div id="top_menu">
+ <h1> HH Services </h1>
+</div>
+<div id="nav">
+<ul>
+ <li>  About  </li>
+ 
+     <a class="button" href="#" > <li>Login</li> </a>        
+        <div class="popup">
+        <a href="#" class="close">CLOSE</a>
+        <form>
+            <P><span class="title"><b>Username   </b></span> <input name="" type="text" /></P>
+            <P><span class="title"><b>Password   </b></span> <input name="" type="password" /></P>
+            <P><input name="" type="button" value="Login" /></P>
+        </form>
+        </div>
+     
+
+  </ul>
+  
+ </div>
+</header>
+
+<div id="first">
+<figure>
+<img src="images/plum.png" alt="Plumbing" />
+ <figcaption> <a href="two.html" target="_self"> Cleaning </a> </figcaption>
+</figure>
+<figure>
+<img src="images/car.png" alt="Plumbing" />
+ <figcaption> <a href="three.html" target="_self"> Automobiles </a> </figcaption>
+</figure>
+<figure>
+<img src="images/elec.png" alt="Plumbing" />
+ <figcaption> <a href="four.html" target="_self"> Electricals </a> </figcaption>
+</figure>
+</div>
+
+<div id="second">
+<figure>
+<img src="images/app.png" alt="Plumbing" />
+ <figcaption> <a href="five.html" target="_self"> Appliances </a> </figcaption>
+</figure>
+<figure>
+<img src="images/carp.png" alt="Plumbing" />
+ <figcaption> <a href="six.html" target="_self"> Carpentry </a> </figcaption>
+</figure>
+</div>
+</section>
+<footer>
+<ul>
+ <li> Help </li>
+ <li> Feedback</li>
+ <li> Contact us </li>
+  </ul>
+</footer>
+</div>
+</body>
+</html>
