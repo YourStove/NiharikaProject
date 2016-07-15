@@ -1,81 +1,140 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-<link rel="stylesheet" href="css\1.css" />
-<style>
-{ margin: 0; }
-.ar{ float: right; }
-a{ text-decoration: none; color: #666;}
-form{ background: #eee; padding: 10px; }
-form p{text-decoration: none; color: #666; padding: 5px 0;}
-form .title{ min-width: 100px; display: inline-block; }
-form input[type=text], form input[type=password]{ border: 1px solid #fff; padding: 5px;}
-.button{ display: inline-block; padding:5px 10px; z-index: 0;  }
-.popup{ padding: 10px 10px 35px; background: #fff; z-index: 999; display: none; position: absolute; right: 0; }
-</style>
-<script src="http://code.jquery.com/jquery-1.9.1.js" type="text/javascript"></script>
-<script src="js/general.js" type="text/javascript">
-</script>
-</head>
-<body>
+  <link rel="stylesheet" href="css\1.css" />
+  <!-- Put this into some other style sheet | Not here -->
+  <style>
+    * {
+      margin: 0;
+    }
+    .ar {
+      float: right;
+    }
+    a {
+      text-decoration: none;
+      color: #666;
+    }
+    form {
+      background: #eee;
+      padding: 10px;
+    }
+    form p {
+      text-decoration: none;
+      color: #666;
+      padding: 5px 0;
+    }
+    form .title {
+      min-width: 100px;
+      display: inline-block;
+    }
+    form input[type=text], form input[type=password] {
+      border: 1px solid #fff;
+      padding: 5px;
+    }
+    .button {
+      display: inline-block;
+      padding:5px 10px;
+      z-index: 0;
+    }
+    .popup {
+      padding: 10px 10px 35px;
+      background: #fff;
+      z-index: 999;
+      display: none;
+      position: absolute;
+      right: 0;
+    }
+    </style>
+  </head>
 
-<header>
-<div id="top_menu">
- <h1> HH Services </h1>
-</div>
-<div id="nav">
-<ul>
- <li>  About  </li>
- 
-     <a class="button" href="#" > <li>Login</li> </a>        
+  <body>
+
+    <header>
+      <div id="top_menu">
+        <h1>HH Services</h1>
+      </div>
+      <div id="nav">
+        <ul>
+          <li>About</li>
+          <li><a class="button" href="#">Login</a></li>
+        </ul>
         <div class="popup">
-        <a href="#" class="close">CLOSE</a>
-        <form>
-            <P><span class="title"><b>Username   </b></span> <input name="" type="text" /></P>
-            <P><span class="title"><b>Password   </b></span> <input name="" type="password" /></P>
-            <P><input name="" type="button" value="Login" /></P>
-        </form>
+          <a href="#" class="close">CLOSE</a>
+          <form>
+            <P><span class="title"><b>Username </b></span><input id="username" name="username" type="text" /></P>
+            <P><span class="title"><b>Password </b></span><input id="password" name="password" type="password" /></P>
+            <P><input id="loginButton" name="loginButton" type="button" value="Login" /></P>
+          </form>
         </div>
-     
+      </div>
+    </header>
 
-  </ul>
-  
- </div>
-</header>
+    <section>
+      <div id="first">
+        <figure>
+          <img src="images/plum.png" alt="Plumbing" />
+          <figcaption> <a href="service_1.html" target="_self"> Cleaning </a> </figcaption>
+        </figure>
+        <figure>
+          <img src="images/car.png" alt="Plumbing" />
+          <figcaption> <a href="service_2.html" target="_self"> Automobiles </a> </figcaption>
+        </figure>
+        <figure>
+          <img src="images/elec.png" alt="Plumbing" />
+          <figcaption> <a href="service_3.html" target="_self"> Electricals </a> </figcaption>
+        </figure>
+      </div>
 
-<div id="first">
-<figure>
-<img src="images/plum.png" alt="Plumbing" />
- <figcaption> <a href="service_1.html" target="_self"> Cleaning </a> </figcaption>
-</figure>
-<figure>
-<img src="images/car.png" alt="Plumbing" />
- <figcaption> <a href="service_2.html" target="_self"> Automobiles </a> </figcaption>
-</figure>
-<figure>
-<img src="images/elec.png" alt="Plumbing" />
- <figcaption> <a href="service_3.html" target="_self"> Electricals </a> </figcaption>
-</figure>
-</div>
+      <div id="second">
+        <figure>
+          <img src="images/app.png" alt="Plumbing" />
+          <figcaption> <a href="service_4.html" target="_self"> Appliances </a> </figcaption>
+        </figure>
+        <figure>
+          <img src="images/carp.png" alt="Plumbing" />
+          <figcaption> <a href="service_5.html" target="_self"> Carpentry </a> </figcaption>
+        </figure>
+      </div>
+    </section>
 
-<div id="second">
-<figure>
-<img src="images/app.png" alt="Plumbing" />
- <figcaption> <a href="service_4.html" target="_self"> Appliances </a> </figcaption>
-</figure>
-<figure>
-<img src="images/carp.png" alt="Plumbing" />
- <figcaption> <a href="service_5.html" target="_self"> Carpentry </a> </figcaption>
-</figure>
-</div>
-</section>
-<footer>
-<ul>
- <li> Help </li>
- <li> Feedback</li>
- <li> Contact us </li>
-  </ul>
-</footer>
-</div>
-</body>
+    <footer>
+      <ul>
+        <li> Help </li>
+        <li> Feedback</li>
+        <li> Contact us </li>
+      </ul>
+    </footer>
+
+    <script src="http://code.jquery.com/jquery-1.9.1.js" type="text/javascript"></script>
+    <script src="js/general.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#loginButton").click(function() {
+          var username = $("#username").val().trim();
+          var password = $("#password").val().trim();
+          $.ajax({
+            url: "php/login.php",
+            type: 'POST',
+            data: {
+              username: username,
+              password: password
+            },
+            success: function(data, status, xhr) {
+              var res = $.parseJSON(data);
+              if(res.status) {
+                alert(res.msg);
+              } else {
+                alert(res.msg);
+              }
+            },
+            error: function(xhr, status, error) {
+              alert(error);
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+
 </html>
