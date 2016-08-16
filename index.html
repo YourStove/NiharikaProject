@@ -123,7 +123,7 @@
             success: function(data, status, xhr) {
               var res = $.parseJSON(data);
               if(res.status) {
-                alert(res.msg);
+                setLogin(username);
               } else {
                 alert(res.msg);
               }
@@ -133,6 +133,24 @@
             }
           });
         });
+
+        function setLogin() {
+
+          $.ajax({
+	    url: "php/set_login_params.php",
+	    type: "POST",
+	    data {
+	      username: username
+	    },
+	    success: function(data, status, xhr) {
+	      var res = $.parseJSON(data);
+              if(res.status) {
+	        alert('Login Done!');
+	      }
+	    }
+          });
+        
+	}
       });
     </script>
   </body>

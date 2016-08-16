@@ -11,9 +11,11 @@ if(isset($_POST['username']) && isset($_POST['password'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
     //Do the login checking here
-    //...
-
-    if(true) {
+    $db = new mysqli('localhost', 'root', 'password', 'service_provider');
+    $sql = "SELECT * FROM table_name WHERE email='" . $username . "' AND password='" . $password . "'"; //->Change the query according to the database table
+    $result = $db->query($sql);
+    if($resultmysqli->num_row > 0) {
+      //User successfully logged in
       //Login pass
       $result = array(
         'status' => true,
