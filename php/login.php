@@ -1,10 +1,5 @@
 <?php
 
-$username=$POST['username'];
-$password=$POST['password'];
-mysql_connect("localhost","root","");
-mysql_select_db("service_provider");
-
 $result = array();
 if(isset($_POST['username']) && isset($_POST['password'])) {
   if(!empty($_POST['username']) && !empty($_POST['password'])) {
