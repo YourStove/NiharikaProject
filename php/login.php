@@ -6,10 +6,10 @@ if(isset($_POST['username']) && isset($_POST['password'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
     //Do the login checking here
-    $db = new mysqli('localhost', 'root', 'password', 'service_provider');
-    $sql = "SELECT * FROM table_name WHERE email='" . $username . "' AND password='" . $password . "'"; //->Change the query according to the database table
-    $result = $db->query($sql);
-    if($resultmysqli->num_row > 0) {
+    $dbc = new mysqli('localhost', 'root', 'password', 'service_provider');
+    $sql = "SELECT * FROM user WHERE username='" . $username . "' AND user_pwd='" . $password . "'"; //->Change the query according to the database table
+    $result = mysqli_query($dbc, $sql);
+    if(mysqli_num_rows($result) > 0) {
       //User successfully logged in
       //Login pass
       $result = array(
